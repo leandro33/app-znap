@@ -38,7 +38,6 @@ znap/
    cd znap/app-znap
    npm install
    npm run dev
-   cd znap
    ```
 
 2. Configure variáveis de ambiente se necessário:  
