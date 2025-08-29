@@ -1,0 +1,10 @@
+image: devopst4tech/base:vue2
+
+pipelines:
+    pull-requests:
+        "**":
+            -   step:
+                    script:
+                        - npm install
+                        - npm run build                        
+    

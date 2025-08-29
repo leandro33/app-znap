@@ -1,0 +1,67 @@
+{
+    "root": true,
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "project": "./tsconfig.eslint.json",
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".vue"],
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/vue3-recommended",
+        "plugin:vue/strongly-recommended",
+        "eslint:recommended",
+        "@vue/typescript/recommended",
+        "standard-with-typescript",
+        "prettier"
+    ],
+    "plugins": ["@typescript-eslint", "prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "@typescript-eslint/naming-convention": [
+            "error", {
+                "selector": "variable",
+                "format": null,
+                "custom": {
+                    "regex": "^([a-z]+(_[a-z]+)*|[A-Z0-9]+(_[A-Z0-9]+)*|[a-zA-Z][a-zA-Z0-9]*)$",
+                    "match": true
+                }
+            }
+        ],
+        "@typescript-eslint/restrict-plus-operands": "off",
+        "vue/no-multiple-template-root": "off",
+        "vue/multi-word-component-names": "off",
+        "vue/no-v-for-template-key": "off",
+        "vue/no-v-html": "off",
+        "vue/no-v-model-argument": "off",
+        "no-irregular-whitespace": 0,
+        "no-useless-escape": 0
+    },
+    "ignorePatterns": [
+        "node_modules",
+        "dist",
+        "public",
+        "src/main.ts",
+        "src/router/index.ts",
+        "src/store/index.ts",
+        "src/components/HelloWorld.vue"
+    ],
+    "overrides": [
+        {
+            "files": ["**/*.style.ts"],
+            "rules": {
+                "@typescript-eslint/naming-convention": ["error", {
+                    "selector": "variableLike",
+                    "format": null,
+                    "custom": {
+                        "regex": "^[a-zA-Z]+(_[a-zA-Z]+)*$", // Regex for snake_case
+                        "match": true
+                    }
+                }]
+            }
+        }
+    ]
+}

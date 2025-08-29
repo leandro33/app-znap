@@ -1,0 +1,26 @@
+/* @import './assets/css/preflight.css';
+@import './assets/css/typograph.css';
+@import './assets/css/grid.css'; */
+@import './assets/css/forms.css';
+@import './assets/css/modals.css';
+/* @import './assets/css/buttons.css';
+@import './assets/css/top-bar.css';
+@import './assets/css/navigations.css';
+@import './assets/css/tables.css';
+@import './assets/css/badges.css';*/
+
+/*@import './assets/css/breadcrumbs.css';*/
+@import './assets/css/alerts.css';
+/*@import './assets/css/dropdowns.css';
+@import './assets/css/cards.css';
+@import './assets/css/custom.css';
+@import './assets/css/toggle.css'; */
+
+@import './assets/vendors/feather/feather.css';/*  top-bar right icons */
+@import './assets/vendors/mdi/css/materialdesignicons.min.css'; /* side-bar left icons */
+@import './assets/vendors/ti-icons/css/themify-icons.css';/* card icons */
+
+@import './assets/css/css/style.css';
+
+@tailwind base;
+@tailwind utilities;

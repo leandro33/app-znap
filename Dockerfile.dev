@@ -1,0 +1,8 @@
+FROM node:20-alpine
+WORKDIR /app-znap
+COPY package*.json ./
+RUN npm i
+VOLUME ["/app-znap/node_modules"]
+COPY . .
+EXPOSE 5173
+CMD ["npm","run","dev","--","--host","0.0.0.0"]
