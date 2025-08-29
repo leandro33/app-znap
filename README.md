@@ -34,7 +34,10 @@ znap/
 
 1. Clone o repositório:
    ```bash
-   git clone https://seu-repo/znap.git
+   git clone git clone https://github.com/leandro33/app-znap.git
+   cd znap/app-znap
+   npm install
+   npm run dev
    cd znap
    ```
 
